@@ -1,4 +1,4 @@
-async function yahoo(req, res, request, cheerio){
+async function scrape(req, res, request, cheerio){
 
   const url = 'https://www.yahoo.com/news/rss';
   return await request(url, handleHTML);
@@ -26,4 +26,4 @@ async function yahoo(req, res, request, cheerio){
   };
 };
 
-module.exports = {yahoo}
+module.exports = {scrape}
